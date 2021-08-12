@@ -7,11 +7,11 @@ export class Client<ActionList = string> {
     this.axios = axiosHttp.create(config);
   }
 
-  request = <T, R = AxiosResponse<T>>(
+  request = <T, R = any>(
     action: ActionList & string,
-    data: T,
+    data?: T,
     config: AxiosRequestConfig = {},
-  ): Promise<R> => {
+  ): Promise<AxiosResponse<R>> => {
     const url = `/${action}`;
     let dataKey: 'data' | 'params' = 'data';
     const _config: AxiosRequestConfig = { method: 'POST', ...config, url };

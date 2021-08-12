@@ -53,12 +53,12 @@ All axios configurations are supported.
 
 Definition:
 ```typescript
-request(action: string, data: T, config: AxiosRequestConfig = {}): Promise; 
+request(action: string, data?: T, config: AxiosRequestConfig = {}): Promise; 
 ```
 
 Definition with generics:
 ```typescript
-request<T, R = AxiosResponse<T>>(action: string, data: T, config: AxiosRequestConfig = {}): Promise<R>; 
+request<T, R = any>(action: string, data: T, config: AxiosRequestConfig = {}): Promise<AxiosResponse<R>>; 
 ```
 
 Visit [Axios Website](https://axios-http.com/), to more information about options and configurations
