@@ -1,6 +1,15 @@
+![CI](https://github.com/cervantes007/wind-waker-client/workflows/CI/badge.svg)
+![npm](https://img.shields.io/npm/v/wind-waker-client)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 # wind-waker-client
 Client side implementation for [Wind Waker](https://cervantes007.github.io/wind-waker/) Nodejs Framework.
 
+this package is isomorphic, you can use on Server/Client side.
+e.g
+- Use it to communicate 2 `wind-waker` servers.
+- Use it to consume your `wind-waker` server from `vue`, `react`, ... or any javascript client app.
 
 ## Getting Started
 
