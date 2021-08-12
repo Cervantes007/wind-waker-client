@@ -1,0 +1,34 @@
+{
+  "name": "wind-waker-client",
+  "version": "0.0.0-semantically-released",
+  "author": "Cervantes007",
+  "description": "Client side implementation to Wind Waker nodejs framework.",
+  "repository": "git@github.com:Cervantes007/wind-waker-client.git",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "commit": "git-cz",
+    "semver": "semantic-release"
+  },
+  "dependencies": {
+    "axios": "0.21.1"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "prettier": "^2.3.2",
+    "semantic-release": "^17.4.2",
+    "typescript": "4.3.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "main": "lib/index.js",
+  "types": "lib/types/index.d.ts"
+}
